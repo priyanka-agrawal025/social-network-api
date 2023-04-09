@@ -33,4 +33,4 @@ const User = mongoose.model("User", userSchema);
 
 const handleError = (err) => console.error(err);
 
-module.exports = User;
+module.exports = {User};
