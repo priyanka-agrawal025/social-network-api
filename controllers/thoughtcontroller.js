@@ -8,7 +8,7 @@ module.exports = {
     },
 
     getSingleThought(req, res) {
-        Thought.findOne({ _id: req.params.thoughtId })
+        Thought.findOne({ _id: req.params._id })
           .then((thought) =>
             !thought
               ? res.status(404).json({ message: "No thoughts with this ID" })
