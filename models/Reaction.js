@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const moment = require('moment');
 
-const reactionSchema = mongoose.Schema({
+const reactionSchema = new mongoose.Schema({
     reactionId: {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         default: () => new Types.ObjectId(),
     },
     reactionBody: {
